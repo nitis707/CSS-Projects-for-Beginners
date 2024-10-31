@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
+
+.center-nav {
+    display: flex;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    min-width: 600px;
+    padding: 5px 20px;
+    border: .5px solid #ccc;
+}
+
+.search button {
+    border: none;
+    padding: 5px 20px;
+}
+
+.mic {
+    padding: 7.5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: grid;
+    place-items: center;
+    margin-left: 15px;
+}
+
+.mic img {
+    width: 30px;
+}
+
+.side-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.tags {
+    display: flex;
+    padding: 10px 20px;
+    gap: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.tag {
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(22, 22, 22);
+}
+
+.dark {
+    background-color: #000;
+    color: white;
+}
+
+.light {
+    background-color: #ededed;
+    color: rgb(67, 67, 67);
+}
+
+.container {
+    display: flex;
+
+}
+
+aside {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.side-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-icons img {
+    width: 30px;
+}
+
+.side-icons p {
+    font-size: 10px;
+    margin-top: -4px;
+}
+
+.bars {
+    margin-top: 10px;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(240, 238, 238);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.cards {
+    padding: 10px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-content {
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.channel-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content-status {
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .center-nav {
+        display: none;
+    }
+
+    /* aside {
+        flex-direction: row;
+        position: relative;
+        bottom: 0;
+    } */
+}

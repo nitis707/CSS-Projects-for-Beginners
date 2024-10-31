@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-section {
+  background-image: url(img/developer.png);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-container {
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-left: 16px;
+}
+
+.lg-text {
+    font-size: 65px;
+    font-weight: 400;
+}
+
+.black-box {
+    background-color: #000;
+    text-transform: uppercase;
+    color: white;
+}
+
+.black-box h2 {
+    font-weight: 300;
+    font-size: 65px;
+    text-align: center;
+}
+
+.black-box h2 span {
+    font-weight: 400;
+    font-size: 96px;
+}
+
+.work {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 20px 0;
+}
+
+.card {
+    max-width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+}
+
+.card-content {
+    padding: 20px;
+}

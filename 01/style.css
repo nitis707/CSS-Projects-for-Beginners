@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height. Defines how the width and height of an element are calculated: should they include padding and borders, or not */
+    box-sizing: border-box;  
+}
+
+body {
+    background-color: #c9d0d4;
+}
+
+.container {
+    min-height: 100vh;
+    border: 10px solid black;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 314px;
+    height: 392px;
+    border-radius: 170px;
+}
+
+.top-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.top-section h1 {
+    
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.top-section p {
+    text-align: end;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.mid-section {
+    margin-top: 50px;
+}
+
+.mid-section h1 {
+    font-size: 72px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.mid-section p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.bio h4 {
+    margin-top: 25px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bio ul li {
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: end;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.bottom-section a {
+    text-decoration: none;
+}

@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 83vw;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+section {
+    scroll-margin: 100px;
+}
+
+ button {
+    align-self: center;
+    border: none;
+    padding: 1.5vmin;
+    border-radius: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+    color: white;
+    background-color: var(--purple300);
+}
+
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8vw 0;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 4.5vw;
+}
+
+nav .nav-menu h4 {
+    border-bottom: 2px solid transparent;
+    transition: .3s ease-in;
+}
+
+nav .nav-menu h4:hover {
+    border-bottom: 2px solid white;
+    transition: .3s ease-in;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo a,
+.nav-menu i {
+    color: white;
+}
+
+nav h1 {
+    font-size: 3vw;
+}
+
+.nav-menu i{
+    display: none;
+}
+
+.hero-section {
+    background-image: url(./images/hero_image.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vmin;
+}
+
+.hero-section h1 {
+    font-size: 5vmax;
+}
+
+.hero-section h3 {
+ font-size: 2vmax;
+}
+
+.music-section {
+    background-color: var(--purple500);
+    padding-top: 4vw;
+}
+
+.music-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vmin;
+    color: white;
+}
+
+.music-section span {
+    margin-right: 10px;
+}
+
+.music-section button {
+    align-self: center;
+    background-color: var(--red600);
+}
+
+.music-section h4 {
+    text-align: center;
+}
+
+.music-section p {
+    font-size: 12px;
+}
+
+.ipad-iphone {
+    position: relative;
+    margin-top: -27.66vw;
+    top: 27.66vw;
+}
+
+.ipad-iphone img{
+    height: 100%;
+    width: 100%;
+}
+
+.about-music {
+    padding-top: 32vw;
+}
+
+.music-desc {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2vmin;
+}
+
+.music-desc button {
+    align-self: center;
+    border: none;
+    padding: 1.5vmin;
+    border-radius: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+    color: white;
+    background-color: var(--purple300);
+}
+
+.music-desc img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2vw;
+}
+
+.video-section {
+    background-image: url(./images/video.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 70vh;
+    color: white;
+    text-align: center;
+}
+
+.video-section .container {
+    padding-top: 25vmin;
+}
+
+.giftCard-section {
+    margin: 5vw 0;
+}
+
+.giftCard-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2vw;
+}
+
+.gift-img {
+    width: 50%;
+}
+
+.gift-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.gift-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.gift-content hr {
+    margin: 15px 0;
+}
+
+.gift-content button {
+    align-self: flex-start;
+    margin: 0;
+}
+
+.footer-content {
+    background-color: var(--purple300);
+    color: white;
+}
+
+.footer-content .container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vw 0;
+}
+
+.footer  {
+    background-color: var(--purple600);
+    padding: 1.5vw 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-content h4 {
+    border-bottom: 2px solid white;
+}
+
+.footer-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+.footer-list a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 4vw 0;
+    }
+
+    nav h1 {
+        font-size: 7vw;
+    }
+
+    .nav-menu h4 {
+        display: none;
+    }
+
+    .nav-menu i {
+        display: block;
+        font-size: 6vw;
+    }
+
+    .hero-section {
+        height: 60vh;
+    }
+
+
+    .music-section button {
+        padding: 1.5vmax;
+        border-radius: 2px;
+        margin: 20px 0;
+    }
+
+    .giftCard-section .container {
+        flex-direction: column;
+    }
+
+    .gift-img {
+        width: 100%;
+    }
+
+    .gift-content {
+        width: 100%;
+    }
+
+
+    .footer-content .container {
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+}

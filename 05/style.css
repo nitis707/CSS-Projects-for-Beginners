@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+  position: sticky;
+  top: 0;
+  margin-bottom: 32px;
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.container {
+  max-width: 83vw;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+.nav-menu i {
+  display: none;
+}
+
+/* Main Section */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.hero-image img {
+  width: 90%;
+  height: 90%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 3vw;
+}
+
+.hero-content .tag {
+  background-color: #149f39;
+  align-self: flex-start;
+  color: #fff;
+  padding: 1vh 1vh;
+}
+
+.hero-content h1 {
+  font-size: 5vw;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  align-self: flex-start;
+  padding: 0.8vw 1.1vw;
+  border-radius: 2px;
+}
+
+.explore-button {
+  background-color: orange;
+}
+
+button:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3vw 0;
+}
+
+.img-icons {
+  height: 83px;
+  width: 83px;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+  padding: 1vw;
+}
+
+.feature:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+
+.divider {
+  border: 1px solid #ccc;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4vw 0;
+}
+
+.menu-content .tag {
+  background-color: #149f39;
+  color: #fff;
+  padding: 1vh 1vh;
+}
+
+.menu-content h2 {
+  margin-top: 20px;
+}
+
+.menu-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7" "I4 I5 I6 I7";
+  margin-bottom: 20px;
+}
+
+.item1 {
+  grid-area: I1;
+}
+.item2 {
+  grid-area: I2;
+}
+.item3 {
+  grid-area: I3;
+}
+.item4 {
+  grid-area: I4;
+}
+.item5 {
+  grid-area: I5;
+}
+.item6 {
+  grid-area: I6;
+}
+.item7 {
+  grid-area: I7;
+}
+
+.grid-img {
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  background-color: #fff0db;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 3vw;
+}
+
+.footer-list {
+  margin-top: 10px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-list li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.news-letter input {
+  margin-top: 10px;
+  padding: 8px;
+}
+
+.news-letter h4 {
+  margin-top: 10px;
+}
+
+.news-letter .icons {
+  display: flex;
+  gap: 1vw;
+  margin-top: 10px;
+}
+
+.news-letter .icons i{
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .nav-menu h4 {
+    display: none;
+  }
+
+  .nav-menu i {
+    display: block;
+    font-size: 4.5vw;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 10vw;
+    font-weight: 500;
+  }
+
+  button {
+    padding: 3vw 5vw;
+  }
+
+  .features {
+    flex-direction: column;
+    margin: 9vw 0;
+    gap: 4vw;
+  }
+
+  .voucher {
+    gap: 3vw;
+  }
+
+  .fresh {
+    gap: 3vw;
+  }
+
+  .delivery {
+    gap: 3vw;
+  }
+
+  .menu-content {
+    margin: 8vw 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 7vw;
+    padding-bottom: 8vw;
+  }
+
+  .news-letter .icons {
+    gap: 3vw;
+  }
+
+  .news-letter .icons i{
+    font-size: 6vw;
+  }
+}
